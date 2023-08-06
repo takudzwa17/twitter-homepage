@@ -1,0 +1,12 @@
+body{
+    margin: 10px;
+}
+
+p{
+    margin: 0;
+}
+
+.main-section{
+    display: grid;
+    grid-template-columns: 340px 1fr 360px;
+}

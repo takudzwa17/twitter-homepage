@@ -1,0 +1,100 @@
+.middle-section{
+    border: 1px solid red;
+}
+
+
+
+.home-middle-section{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 12px;
+    margin-left: 13px;
+}
+
+.home-middle-section:hover{
+    cursor: pointer;
+}
+
+
+.for-you-and-following{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.for-you-div,
+.following-div{
+    width: 340px;
+    text-align: center;
+    padding: 10px;
+    height: 28px;
+    border-bottom: 1px solid grey;
+}
+
+.for-you-div:hover,
+.following-div:hover{
+    background-color: rgb(228, 225, 225);
+    cursor: pointer;
+}
+
+.for-you,
+.following{
+    font-size: 20px;
+}
+
+.what-is-happening-div{
+    margin: 13px 13px;
+    height: 100px;
+    border: 1px solid yellow;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+#what-is-happening-text{
+    height: 40px;
+    width: 620px;
+    font-size: 21px;
+    margin-left: 5px;
+}
+
+#what-is-happening-text::placeholder{
+    text-align: start;
+    font-size: 20px;
+}
+
+.one{
+    display: flex;
+    column-gap: 20px;
+}
+
+
+.media{
+    position: relative;
+    cursor: pointer;
+}
+
+.blue-icons{
+    margin-top: 20px;
+    width: 20px;
+    margin-left: 5px;
+}
+
+
+
+.tool-tip{
+    position: absolute;
+    top: 50px;
+    font-size: 12px;
+    color: white;
+    background-color: grey;
+    width: 32px;
+    padding: 3px;
+    border-radius: 2px;
+    opacity: 0;
+}
+
+
+.media:hover .tool-tip{
+    opacity: 1;
+}
