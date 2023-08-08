@@ -8,5 +8,5 @@ p{
 
 .main-section{
     display: grid;
-    grid-template-columns: 340px 1fr 360px;
+    grid-template-columns: 340px 1fr 390px;
 }
