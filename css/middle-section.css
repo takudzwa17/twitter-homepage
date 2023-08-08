@@ -49,6 +49,8 @@
     height: 100px;
     display: grid;
     grid-template-columns: 50px 1fr;
+    
+
 }
 
 #what-is-happening-text{
@@ -192,6 +194,252 @@
 }
 
 .more-more-tweets{
-    border-top: 1px solid grey;
+    border-top: 1px solid rgb(229, 226, 226);
+    border-bottom: 1px solid rgb(229, 226, 226);
+    margin-top: -15px;
+    height: 45px;
 }
 
+
+.more-tweets{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    align-items: center;
+    padding: 2px;
+    color: rgb(29, 155, 240);
+}
+
+.more-more-tweets:hover{
+    background-color: rgb(243, 241, 241);
+    cursor: pointer;
+}
+
+.main-tweets-div-one{
+    margin-bottom: 30px;
+}
+
+.main-tweets-div-one:hover{
+    background-color: rgb(243, 241, 241);
+    cursor: pointer;
+}
+
+
+
+.main-tweets-div{
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 38px 1fr;
+    column-gap: 10px;
+    margin: 4px 10px 10px 13px;
+    position: relative;
+}
+
+.usernames-middle-section{
+    display: flex;
+}
+
+.icons-verified{
+    height: 22px;
+    margin-left: -2px;
+    margin-right: 2px;
+}
+
+.icons-more{
+    height: 12px;
+    margin-left: -2px;
+    margin-right: 2px;
+    position: absolute;
+    top: 16px;
+    right: 2px;
+}
+
+.links-for-texts{
+    color: rgb(29, 155, 240);
+}
+
+.post-images-videos{
+    display: flex;
+    align-items: center;
+}
+
+.posts-images{
+    margin-top: 15px;
+    height: 500px;
+    border-radius: 15px;
+}
+
+img{
+    object-fit: contain;
+}
+
+.feedback-div{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reply,
+.retweet,
+.like,
+.views,
+.share{
+    display: flex;
+    align-items: center;
+}
+
+
+.numbers{
+    font-size: 14px;
+    padding-left: 4px;
+}
+
+.reply:hover,
+
+
+.views:hover,
+.share:hover{
+    color: rgb(29, 155, 240);
+}
+
+.retweet:hover{
+    color: green;
+}
+
+.like:hover{
+    color: red;
+}
+
+
+
+.reply-image{
+    height: 17px;
+    border-radius: 100px;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+.retweet-image{
+    height: 19px;
+    border-radius: 100px;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+.like-image{
+    height: 18px;
+    border-radius: 100px;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+
+.views-image{
+    height: 18px;
+    border-radius: 100px;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+.share-image{
+    height: 18px;
+    border-radius: 100px;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+
+.reply-image-tooltip,
+.retweet-image-tooltip,
+.like-image-tooltip,
+.views-image-tooltip,
+.share-image:hover{
+    position: relative;
+}
+
+.reply-tooltip,
+.retweet-tooltip,
+.like-tooltip,
+.views-tooltip,
+.share-tooltip{
+    position: relative;
+    cursor: pointer;
+    display: flex;
+}
+
+.reply-tooltip .tooltip{
+    position: absolute;
+    bottom: -30px;
+    font-size: 12px;
+    color: white;
+    background-color: grey;
+    width: 28px;
+    padding: 3px;
+    border-radius: 2px;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.retweet-tooltip .tooltip{
+    position: absolute;
+    bottom: -30px;
+    font-size: 12px;
+    color: white;
+    background-color: grey;
+    width: 40px;
+    padding: 3px;
+    border-radius: 2px;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.like-tooltip .tooltip{
+    position: absolute;
+    bottom: -30px;
+    font-size: 12px;
+    color: white;
+    background-color: grey;
+    width: 23px;
+    padding: 3px;
+    border-radius: 2px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.views-tooltip .tooltip{
+    position: absolute;
+    bottom: -30px;
+    font-size: 12px;
+    color: white;
+    background-color: grey;
+    width: 30px;
+    padding: 3px;
+    border-radius: 2px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.share-tooltip .tooltip{
+    position: absolute;
+    bottom: -30px;
+    font-size: 12px;
+    color: white;
+    background-color: grey;
+    width: 29px;
+    padding: 3px;
+    border-radius: 2px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.reply-tooltip:hover .tooltip,
+.retweet-tooltip:hover .tooltip,
+.like-tooltip:hover .tooltip,
+.views-tooltip:hover .tooltip,
+.share-tooltip:hover .tooltip{
+    opacity: 1;
+}

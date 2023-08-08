@@ -7,7 +7,6 @@
     height: 34px;
     position: fixed;
     padding: 10px;
-    margin-left: 74px;
     margin-bottom: 20px;
 }
 
@@ -23,8 +22,8 @@
     position: fixed;
     top: 60px;
     bottom: 0;
-    margin-left: 80px;
     margin-top: 10px;
+    height: 2000px;
 }
 
 .icons{

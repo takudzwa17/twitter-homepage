@@ -1,12 +1,14 @@
 body{
     margin: 10px;
+    height: 3000px;
 }
 
 p{
     margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .main-section{
     display: grid;
-    grid-template-columns: 340px 1fr 390px;
+    grid-template-columns: 1fr 2fr 1fr;
 }
