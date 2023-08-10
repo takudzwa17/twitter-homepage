@@ -1,8 +1,19 @@
 .left-section{
     position: relative;
-    height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.twitter-sidebar{
+    position: fixed;
+    width: auto;
+    overflow-y: scroll;
+    overflow-x: none; 
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+}
 
 
 /* Style for Main logo which is X */
@@ -20,7 +31,7 @@
 }
 
 .x-logo:hover{
-    background-color: grey;
+    background-color: rgb(230, 225, 225);
     cursor: pointer;
     border-radius: 50px;
 }
@@ -35,6 +46,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-left: 20px;
 }
 
 
@@ -55,8 +67,21 @@
     
 }
 
+.other-icons-more{
+    border-radius: 25px;
+    padding: 3px;
+    width: 43px;
+    height: 43px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
 
-.other-icons:hover {
+
+.other-icons:hover,
+.other-icons-more:hover {
     background-color: rgb(230, 225, 225);
     cursor: pointer;
 }
@@ -76,7 +101,7 @@
     border-radius: 3px;
     font-size: 13px;
     left: 4px;
-    bottom: -15px;
+    bottom: -20px;
     cursor: pointer;
     padding: 2px 4px;
     opacity: 0;
@@ -92,7 +117,7 @@
     border-radius: 3px;
     font-size: 13px;
     left: 5px;
-    bottom: -17px;
+    bottom: -20px;
     cursor: pointer;
     padding: 2px 4px;
     opacity: 0;
@@ -108,7 +133,7 @@
     border-radius: 3px;
     font-size: 13px;
     left: 5px;
-    bottom: -17px;
+    bottom: -20px;
     cursor: pointer;
     padding: 2px 4px;
     opacity: 0;
@@ -124,7 +149,7 @@
     border-radius: 3px;
     font-size: 13px;
     left: 5px;
-    bottom: -17px;
+    bottom: -20px;
     cursor: pointer;
     padding: 2px 4px;
     opacity: 0;
@@ -140,7 +165,7 @@
     border-radius: 3px;
     font-size: 13px;
     left: 10px;
-    bottom: -17px;
+    bottom: -20px;
     cursor: pointer;
     padding: 2px 4px;
     opacity: 0;
@@ -156,7 +181,7 @@
     border-radius: 3px;
     font-size: 13px;
     left: 5px;
-    bottom: -17px;
+    bottom: -20px;
     cursor: pointer;
     padding: 2px 4px;
     opacity: 0;
@@ -172,7 +197,7 @@
     border-radius: 3px;
     font-size: 13px;
     left: 5px;
-    bottom: -17px;
+    bottom: -20px;
     cursor: pointer;
     padding: 2px 4px;
     opacity: 0;
@@ -188,7 +213,7 @@
     border-radius: 3px;
     font-size: 13px;
     left: 5px;
-    bottom: -17px;
+    bottom: -20px;
     cursor: pointer;
     padding: 2px 4px;
     opacity: 0;
@@ -204,7 +229,7 @@
     border-radius: 3px;
     font-size: 13px;
     left: 5px;
-    bottom: -17px;
+    bottom: -20px;
     cursor: pointer;
     padding: 2px 4px;
     opacity: 0;
@@ -220,13 +245,13 @@
     border-radius: 3px;
     font-size: 13px;
     left: 8px;
-    bottom: -17px;
+    bottom: -20px;
     cursor: pointer;
     padding: 2px 4px;
     opacity: 0;
     pointer-events: none;
     white-space: nowrap;
-    z-index: 2;
+    z-index: 200;
 }
 
 
@@ -237,13 +262,13 @@
     border-radius: 3px;
     font-size: 13px;
     left: 8px;
-    bottom: -17px;
+    bottom: -20px;
     cursor: pointer;
     padding: 2px 4px;
     opacity: 0;
     pointer-events: none;
     white-space: nowrap;
-    z-index: 2;
+    z-index: 200;
 }
 
 
@@ -322,6 +347,6 @@
 
 .profile-picture-sidebar{
     position: absolute;
-    bottom: 0;
+    top: 640px;
 }
 

@@ -1,15 +1,24 @@
 .middle-section{
     border: 1px solid rgb(229, 226, 226);
     border-top: none;
+    
 }
 
+.middle-section-top-section{}
 
+.home-text{
+    z-index: 200;
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr;
+}
 
 .home-middle-section{
     font-size: 22px;
     font-weight: bold;
     margin-top: 12px;
     margin-left: 13px;
+
 }
 
 .home-middle-section:hover{
@@ -18,15 +27,13 @@
 
 
 .for-you-and-following{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 15px;
 }
 
 .for-you-div,
 .following-div{
-    width: 340px;
     text-align: center;
     padding: 10px;
     height: 28px;
@@ -41,7 +48,22 @@
 
 .for-you,
 .following{
-    font-size: 20px;
+    font-size: 17px;
+}
+
+.for-you-div{
+    position: relative;
+    font-weight: bold;
+}
+
+.for-you-tooltip{
+    background-color: rgb(29, 155, 240);
+    width: 65px;
+    height: 4px;
+    border-radius: 3px;
+    position: absolute;
+    left: 130px;
+    bottom: 0;
 }
 
 .what-is-happening-div{
@@ -49,13 +71,10 @@
     height: 100px;
     display: grid;
     grid-template-columns: 50px 1fr;
-    
-
 }
 
 #what-is-happening-text{
     height: 40px;
-    width: 620px;
     font-size: 21px;
     margin-left: 5px;
     border: none;
@@ -174,7 +193,12 @@
     opacity: 0.6;
 }
 
-.post-button-small{
+ .post-button-small{
+   position: absolute;
+   right: 70px;
+}
+
+.what-is-happening-div{
     position: relative;
 }
 
@@ -189,7 +213,6 @@
     margin-bottom: 140px;
     position: absolute;
     top: 11px;
-    left: 320px;
     opacity: 0.6;
 }
 
@@ -254,11 +277,11 @@
 }
 
 .icons-more{
-    height: 12px;
+    height: 14px;
     margin-left: -2px;
     margin-right: 2px;
     position: absolute;
-    top: 16px;
+    top: 13px;
     right: 2px;
 }
 
