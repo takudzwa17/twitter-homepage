@@ -1,208 +1,327 @@
 .left-section{
-    z-index: 100;
-}
-
-
-.twitter-logo{
-    height: 34px;
-    position: fixed;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-
-.twitter-logo:hover{
-    background-color: rgb(228, 225, 225);
-    border-radius: 100px;
-    cursor: pointer;
-    height: 34px;
-}
-
-.sidebar{
-    width: 230px;
-    position: fixed;
-    top: 60px;
-    bottom: 0;
-    margin-top: 10px;
-    height: 2000px;
-}
-
-.icons{
-    height: 22px;
-    margin-right: 14px;
-}
-
-.icons-home{
-    height: 28px;
-    margin-right: 10px;
-}
-
-.icon-name{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
-}
-
-
-
-.home,
-.explore,
-.notifications,
-.messages,
-.list,
-.bookmarks,
-.communities,
-.verified,
-.profile,
-.more{
-    display: flex;
-    align-items: center;
     position: relative;
-    padding: 10px;
-    width: 230px;
+    height: 750px;
 }
 
-.home:hover{
-    background-color: rgb(228, 225, 225);
-    border-radius: 40px;
-    cursor: pointer;
-    width: 110px;
-}
 
-.blue-dot{
-    height: 7px;
-    position: absolute;
-    left: 27.5px;
-    top: 8px;
-}
 
-.explore:hover{
-    background-color: rgb(228, 225, 225);
-    border-radius: 40px;
-    cursor: pointer;
-    width: 125px;
-}
+/* Style for Main logo which is X */
 
-.notifications:hover{
-    background-color: rgb(228, 225, 225);
-    border-radius: 40px;
-    cursor: pointer;
-    width: 170px;
-}
-
-.messages:hover{
-    background-color: rgb(228, 225, 225);
-    border-radius: 40px;
-    cursor: pointer;
-    width: 140px;
-}
-
-.list:hover{
-    background-color: rgb(228, 225, 225);
-    border-radius: 40px;
-    cursor: pointer;
-    width: 90px;
-}
-
-.bookmarks:hover{
-    background-color: rgb(228, 225, 225);
-    border-radius: 40px;
-    cursor: pointer;
-    width: 150px;
-}
-
-.communities:hover{
-    background-color: rgb(228, 225, 225);
-    border-radius: 40px;
-    cursor: pointer;
-    width: 170px;
-}
-
-.verified:hover{
-    background-color: rgb(228, 225, 225);
-    border-radius: 40px;
-    cursor: pointer;
-    width: 120px;
-}
-
-.profile:hover{
-    background-color: rgb(228, 225, 225);
-    border-radius: 40px;
-    cursor: pointer;
-    width: 110px;
-}
-
-.more:hover{
-    background-color: rgb(228, 225, 225);
-    border-radius: 40px;
-    cursor: pointer;
-    width: 100px;
-}
-
-.post-button{
+.main-icons{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 9px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
-.post-blue-button{
+.x-logo{
+    border-radius: 50px;
+}
+
+.x-logo:hover{
+    background-color: grey;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.main-logo-x{
+    width: 45px;
+    height: 45px;
+}
+
+.other-icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/* Style for other logos */
+
+
+.other-icons{
+    border-radius: 25px;
+    padding: 3px;
+    width: 43px;
+    height: 43px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.other-icons:hover {
+    background-color: rgb(230, 225, 225);
+    cursor: pointer;
+}
+
+.small-blue-dot{
+    width: 7px;
+    position: absolute;
+    top: 7px;
+    right: 13px;
+}
+
+
+.home-icon-tooltip .tool-tip{
+    background-color: grey;
+    color: white;
+    position: absolute;
+    border-radius: 3px;
+    font-size: 13px;
+    left: 4px;
+    bottom: -15px;
+    cursor: pointer;
+    padding: 2px 4px;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+.explore-icon-tooltip .tool-tip{
+    background-color: grey;
+    color: white;
+    position: absolute;
+    border-radius: 3px;
+    font-size: 13px;
+    left: 5px;
+    bottom: -17px;
+    cursor: pointer;
+    padding: 2px 4px;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+.notifications-icon-tooltip .tool-tip{
+    background-color: grey;
+    color: white;
+    position: absolute;
+    border-radius: 3px;
+    font-size: 13px;
+    left: 5px;
+    bottom: -17px;
+    cursor: pointer;
+    padding: 2px 4px;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+.messages-icon-tooltip .tool-tip{
+    background-color: grey;
+    color: white;
+    position: absolute;
+    border-radius: 3px;
+    font-size: 13px;
+    left: 5px;
+    bottom: -17px;
+    cursor: pointer;
+    padding: 2px 4px;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+.lists-icon-tooltip .tool-tip{
+    background-color: grey;
+    color: white;
+    position: absolute;
+    border-radius: 3px;
+    font-size: 13px;
+    left: 10px;
+    bottom: -17px;
+    cursor: pointer;
+    padding: 2px 4px;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+.bookmarks-icon-tooltip .tool-tip{
+    background-color: grey;
+    color: white;
+    position: absolute;
+    border-radius: 3px;
+    font-size: 13px;
+    left: 5px;
+    bottom: -17px;
+    cursor: pointer;
+    padding: 2px 4px;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+.communities-icon-tooltip .tool-tip{
+    background-color: grey;
+    color: white;
+    position: absolute;
+    border-radius: 3px;
+    font-size: 13px;
+    left: 5px;
+    bottom: -17px;
+    cursor: pointer;
+    padding: 2px 4px;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+.verified-icon-tooltip .tool-tip{
+    background-color: grey;
+    color: white;
+    position: absolute;
+    border-radius: 3px;
+    font-size: 13px;
+    left: 5px;
+    bottom: -17px;
+    cursor: pointer;
+    padding: 2px 4px;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+.profile-icon-tooltip .tool-tip{
+    background-color: grey;
+    color: white;
+    position: absolute;
+    border-radius: 3px;
+    font-size: 13px;
+    left: 5px;
+    bottom: -17px;
+    cursor: pointer;
+    padding: 2px 4px;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+.more-icon-tooltip .tool-tip{
+    background-color: grey;
+    color: white;
+    position: absolute;
+    border-radius: 3px;
+    font-size: 13px;
+    left: 8px;
+    bottom: -17px;
+    cursor: pointer;
+    padding: 2px 4px;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+
+.post-icon-tooltip .tool-tip{
+    background-color: grey;
+    color: white;
+    position: absolute;
+    border-radius: 3px;
+    font-size: 13px;
+    left: 8px;
+    bottom: -17px;
+    cursor: pointer;
+    padding: 2px 4px;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+
+
+
+.home-icon-tooltip:hover .tool-tip,
+.explore-icon-tooltip:hover .tool-tip,
+.notifications-icon-tooltip:hover .tool-tip,
+.messages-icon-tooltip:hover .tool-tip,
+.lists-icon-tooltip:hover .tool-tip,
+.bookmarks-icon-tooltip:hover .tool-tip,
+.communities-icon-tooltip:hover .tool-tip,
+.verified-icon-tooltip:hover .tool-tip,
+.profile-icon-tooltip:hover .tool-tip,
+.more-icon-tooltip:hover .tool-tip,
+.post-icon-tooltip:hover .tool-tip{
+    opacity: 1;
+}
+
+.icons-sidebar{
+    width: 28px;
+}
+
+.icons-sidebar-home{
+    width: 28px;
+}
+
+.icons-sidebar-explore,
+.icons-sidebar-bookmarks{
+    width: 24px;
+}
+
+.icons-sidebar-message,
+.icons-sidebar-lists{
+    width: 21px;
+}
+
+.icons-sidebar-communities{
+    width: 27px;
+}
+
+.icons-sidebar-verified,
+.icons-sidebar-profile,
+.icons-sidebar-more{
+    width: 24px;
+}
+
+
+.icons-sidebar-post{
+    margin-top: 15px;
+    width: 70px;
+}
+
+
+
+.notifications-count{
     color: white;
     background-color: rgb(29, 155, 240);
-    height: 50px;
-    width: 230px;
-    border: none;
-    border-radius: 100px;
-    font-size: 18px;
-    margin-bottom: 140px;
-}
-
-.post-blue-button:hover{
-    background-color: rgb(5, 125, 204);
-    transition: 0.6s;
-    cursor: pointer;
-}
-
-.bottom-profile-details{
-    width:230px;
+    border-radius: 10px;
+    width: 15px;
     display: flex;
-    justify-content: space-between;
-    padding: 10px;
+    justify-content: center;
+    font-size: 12px;
+    align-items: center;
+    position: absolute;
+    top: 8px;
+    right: 12px;
 }
 
 
-.bottom-profile-details:hover{
-    background-color: rgb(228, 225, 225);
-    border-radius: 40px;
-    cursor: pointer;
-    width: 230px;
-    height: 40px;
-}
-
-
-.my-picture{
+.my-picture-post{
     width: 38px;
     border-radius: 20px;
     margin-right: 3px;
 }
 
-
-.icons-bottom-profile{
-    height: 15px;
+.profile-picture-sidebar{
+    position: absolute;
+    bottom: 0;
 }
-
-.username,
-.username-id{
-    font-size: 16px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-right: 5px;
-}
-
-.username{
-    font-weight: bold;
-}
-
-.more-detail{
-    margin-top: 14px;
-}
-
-
 
