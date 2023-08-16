@@ -147,6 +147,10 @@ p{
             z-index: 100;
         }
 
+        .profile-picture-sidebar{
+            margin-top: 80px;
+        }
+
 
         .middle-section{
             margin-left: -48px;

@@ -146,3 +146,96 @@ p{
     text-decoration: none;
     color: rgb(29, 155, 240);
 }
+
+/*Who to follow section styles*/
+
+.who-to-follow{
+    background-color: rgb(245, 243, 243);
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.who-to-follow-text{
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 10px 15px;
+}
+
+.who-to-follow-suggestions{
+    padding: 10px 15px 10px 15px;
+    display: grid;
+    grid-template-columns: 55px 1fr 70px;
+}
+
+.who-to-follow-suggestions:hover{
+    background-color: rgb(237, 236, 236);
+    cursor: pointer;
+}
+
+.who-to-follow-profile-picture{
+    width: 45px;
+    border-radius: 25px;
+}
+
+.username-and-verified-badge{
+    display: flex;
+    column-gap: 2px;
+}
+
+
+
+.who-to-follow-username{
+    font-weight: bold;
+}
+
+.who-to-follow-verified{
+    width: 20px;
+}
+
+.who-to-follow-id{
+    color: grey;
+}
+
+.who-to-follow-button{
+    height: 30px;
+    width: 75px;
+    border-radius: 40px;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    border: none;
+    margin-top: 8px;
+}
+
+.who-to-follow-button:hover{
+    background-color: rgb(37, 37, 37);
+    cursor: pointer;
+}
+
+.more-links-div{
+    display: flex;
+    column-gap: 3.5px;
+}
+
+.more-links{
+    margin-top: 5px;
+    width: 10px;
+    color: grey;
+}
+
+.x-links-one{
+    display: flex;
+    column-gap: 20px;
+    font-size: 14px;
+    padding-left: 15px;
+    color: grey;
+    margin-bottom: 5px;
+}
+
+.x-links-two{
+    display: flex;
+    column-gap: 20px;
+    font-size: 14px;
+    padding-left: 15px;
+    color: grey;
+}
