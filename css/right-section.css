@@ -1,3 +1,148 @@
+p{
+    margin: 0;
+}
+
+
 .right-section{
-    
+    margin-left: 40px;
+    margin-top: 5px;
+    margin-right: 90px;
+}
+
+.search-bar{
+    display: flex;
+}
+
+.search-bar-input{
+    flex: 1;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    background: transparent url(../images/search.svg) no-repeat 10px;
+    background-position: 20px;
+    background-size: 22px;
+    border: none;
+    background-color: rgb(245, 243, 243);
+    padding-left: 65px;
+}
+
+
+.search-bar-input::placeholder{
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* Get verfied section */
+
+.get-verified{
+    margin-top: 20px;
+    background-color: rgb(245, 243, 243);
+    height: 100px;
+    border-radius: 15px;
+    padding: 15px 20px;
+}
+
+.get-verified-heading{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.get-verified-paragraph{
+    margin-bottom: 10px;
+    color: black;
+    font-weight: 600;
+}
+
+
+.get-verified-button-black{
+    margin-bottom: 5px;
+}
+
+
+.get-verified-button{
+    height: 35px;
+    border-radius: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+.get-verified-button:hover{
+    cursor: pointer;
+    background-color: rgb(71, 71, 71);
+    border: none;
+}
+
+
+
+/* Trends section */
+
+.trends{
+    background-color: rgb(245, 243, 243);
+    margin-top: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.trends-heading{
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 15px 15px;
+}
+
+.trends-details{
+    padding: 10px 15px;
+}
+
+.trends-details:hover{
+    background-color: rgb(237, 234, 234);
+    cursor: pointer;
+}
+
+.trends-details-category{
+    display: flex;
+    justify-content: space-between;
+}
+
+.trends-type{
+    color: grey;
+    font-size: 14px;
+}
+
+.icons-more-trends{
+    margin-top: 4px;
+    height: 16px;
+}
+
+.trends-details-topic{
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.trends-details-posts{
+    color: grey;
+    font-size: 14px;
+}
+
+
+.trends-show-more {
+    padding: 15px;
+    border-radius: 0 0 15px 15px;
+}
+
+.trends-show-more:hover {
+    cursor: pointer;
+    background-color: rgb(237, 234, 234);
+}
+
+.trends-show-more a{
+    text-decoration: none;
+    color: rgb(29, 155, 240);
 }

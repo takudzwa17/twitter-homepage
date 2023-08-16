@@ -9,7 +9,7 @@
     position: fixed;
     width: auto;
     overflow-y: scroll;
-    overflow-x: none; 
+    overflow-x: hidden; 
     top: 0;
     bottom: 0;
     z-index: 100;
@@ -262,7 +262,7 @@
     border-radius: 3px;
     font-size: 13px;
     left: 8px;
-    bottom: -20px;
+    bottom: -30px;
     cursor: pointer;
     padding: 2px 4px;
     opacity: 0;
