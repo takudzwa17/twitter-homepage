@@ -193,9 +193,9 @@
     opacity: 0.6;
 }
 
- .post-button-small{
-   position: absolute;
-   right: 70px;
+.post-button-small{
+    position: absolute;
+    right: 70px;
 }
 
 .what-is-happening-div{
@@ -258,9 +258,111 @@
     position: relative;
 }
 
+.profile-picture-div{
+    position: relative;
+}
+
+.profile-picture-div .profile-picture-tooltip{
+    position: absolute;
+    top: 45px;
+    left: -8px;
+    padding: 5px;
+    background-color: grey;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.profile-picture-div:hover .profile-picture-tooltip{
+    opacity: 1;
+}
+
 .usernames-middle-section{
     display: flex;
 }
+
+.usernames-div{
+    display: flex;
+    position: relative;
+}
+
+.usernames-div .username-tooltip{
+    position: absolute;
+    top: 25px;
+    padding: 5px;
+    background-color: grey;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.username-id-div{
+    position: relative;
+}
+
+.username-id-div .username-id-tooltip{
+    position: absolute;
+    top: 25px;
+    padding: 5px;
+    background-color: grey;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.usernames-div:hover .username-tooltip,
+.username-id-div:hover .username-id-tooltip{
+    opacity: 1;
+}
+
+.username-tooltip-first-div,
+.username-id-tooltip-div,
+.profile-picture-tooltip-div{
+    display: flex;
+    column-gap: 30px;
+    justify-content: space-between;
+}
+
+.username-tooltip-first-div .my-picture{
+    width: 40px;
+}
+
+.username-tooltip-button{
+    background-color: black;
+    font-size: 12px;
+    color: white;
+    height: 23px;
+    width: 60px;
+    border: none;
+    border-radius: 20px;
+}
+
+.username-tooltip-button:hover{
+    cursor: pointer;
+}
+
+.time-div{
+    position: relative;
+}
+
+.time-div .time-tooltip{
+    position: absolute;
+    background-color: grey;
+    width: 90px;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.time-div:hover .time-tooltip{
+    opacity: 1;
+}
+
+
+.time:hover{
+    text-decoration: underline;
+}
+
 
 .icons-verified{
     height: 22px;
@@ -468,4 +570,26 @@ img{
 .views-tooltip:hover .tooltip,
 .share-tooltip:hover .tooltip{
     opacity: 1;
+}
+
+
+.username,
+.username-id{
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 5px;
+}
+
+.username{
+    font-weight: bold;
+}
+
+.more-detail{
+    margin-top: 14px;
+}
+
+
+.username:hover,
+.username-id:hover{
+    text-decoration: underline;
 }
