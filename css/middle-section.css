@@ -264,13 +264,19 @@
 
 .profile-picture-div .profile-picture-tooltip{
     position: absolute;
-    top: 45px;
+    top: 40px;
     left: -8px;
-    padding: 5px;
-    background-color: grey;
+    padding: 5px 10px;
+    background-color: white;
     opacity: 0;
     pointer-events: none;
     white-space: nowrap;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.profile-picture-div .my-picture{
+    margin-top: 5px;
 }
 
 .profile-picture-div:hover .profile-picture-tooltip{
@@ -289,21 +295,31 @@
 .usernames-div .username-tooltip{
     position: absolute;
     top: 25px;
-    padding: 5px;
+    padding: 5px 10px;
     background-color: grey;
     opacity: 0;
     pointer-events: none;
     white-space: nowrap;
+    border-radius: 5px;
 }
 
 .username-id-div{
     position: relative;
 }
 
+.username-tooltip-first-div .my-picture{
+    margin-top: 5px;
+}
+
+.username-id-div .my-picture{
+    margin-top: 5px;
+}
+
 .username-id-div .username-id-tooltip{
     position: absolute;
     top: 25px;
-    padding: 5px;
+    border-radius: 5px;
+    padding: 5px 10px;
     background-color: grey;
     opacity: 0;
     pointer-events: none;
@@ -329,16 +345,32 @@
 
 .username-tooltip-button{
     background-color: black;
-    font-size: 12px;
     color: white;
-    height: 23px;
-    width: 60px;
+    height: 28px;
+    width: 65px;
+    margin-top: 5px;
     border: none;
     border-radius: 20px;
 }
 
 .username-tooltip-button:hover{
     cursor: pointer;
+}
+
+.username,
+.username-id{
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 5px;
+}
+
+.username{
+    font-weight: bold;
+}
+
+.usernames-and-id-in-tooltip .username{
+    display: flex;
+    column-gap: 4px;
 }
 
 .time-div{
@@ -363,6 +395,9 @@
     text-decoration: underline;
 }
 
+.biography-tooltip-paragraph{
+    font-size: 15px;
+}
 
 .icons-verified{
     height: 22px;
