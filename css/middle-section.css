@@ -276,7 +276,7 @@
     border-radius: 15px;
     border: 1px solid rgb(212, 212, 212);
     width: 250px;
-    z-index: 2;
+    z-index: 100;
 }
 
 .profile-picture-div .my-picture{
